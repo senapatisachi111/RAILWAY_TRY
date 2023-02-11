@@ -6,8 +6,7 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN rm -r /DQ-the-file-donor
-RUN mkdir /DQ-the-file-donor
-WORKDIR /DQ-the-file-donor
+RUN mkdir /test_bot
+WORKDIR /test_bot
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
