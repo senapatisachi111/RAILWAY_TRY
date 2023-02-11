@@ -6,4 +6,4 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-python3 bot.py
+RUN python3 bot.py
