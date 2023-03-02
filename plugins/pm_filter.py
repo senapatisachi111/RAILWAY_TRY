@@ -652,8 +652,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ),
                 InlineKeyboardButton(
                     'Mᴀɴᴜᴀʟ Sᴛᴀʀᴛ' if settings["botpm"] else 'Aᴜᴛᴏ Sᴇɴᴅ',
-                    callback_data=f'setgs#botpm#{settings["botpm"]}#{grp_id}',
-                ),
+                    callback_data=f'setgs#botpm#{settings["botpm"]}#{grp_id}'
                 ],
                 [
                     InlineKeyboardButton('Pʀᴏᴛᴇᴄᴛ Cᴏɴᴛᴇɴᴛ',
@@ -743,8 +742,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ),
                 InlineKeyboardButton(
                     'Mᴀɴᴜᴀʟ Sᴛᴀʀᴛ' if settings["botpm"] else 'Aᴜᴛᴏ Sᴇɴᴅ',
-                    callback_data=f'setgs#botpm#{settings["botpm"]}#{grp_id}',
-                ),
+                    callback_data=f'setgs#botpm#{settings["botpm"]}#{grp_id}'
                 ],
                 [
                     InlineKeyboardButton('Pʀᴏᴛᴇᴄᴛ Cᴏɴᴛᴇɴᴛ',
@@ -1247,7 +1245,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton(
                     'Mᴀɴᴜᴀʟ Sᴛᴀʀᴛ' if settings["botpm"] else 'Aᴜᴛᴏ Sᴇɴᴅ',
                     callback_data=f'setgs#botpm#{settings["botpm"]}#{grp_id}',
-                ),
                 ],
                 [
                     InlineKeyboardButton('Pʀᴏᴛᴇᴄᴛ Cᴏɴᴛᴇɴᴛ',
