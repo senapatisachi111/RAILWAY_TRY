@@ -2,8 +2,7 @@ class script(object):
     START_TXT = """<b>Hᴇʟʟᴏ {},
 Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs Oɴʟʏ Iɴ Gʀᴏᴜᴘꜱ, Jᴜsᴛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ Aɴᴅ Eɴᴊᴏʏ 😍🎉</b>"""
 
-    GRP_TXT = """<b>Hᴇʏ {}
-Tʜᴇꜱᴇ Aʀᴇ Tʜᴇ Lɪɴᴋꜱ ᴏғ Oᴜʀ Gʀᴏᴜᴘꜱ. Pʟᴇᴀꜱᴇ Jᴏɪɴ Aɴᴅ Sᴜᴘᴘᴏʀᴛ Uꜱ ❤️</b>"""
+    GRP_TXT = """<b>Tʜᴇꜱᴇ Aʀᴇ Tʜᴇ Lɪɴᴋꜱ ᴏғ Oᴜʀ Gʀᴏᴜᴘꜱ. Pʟᴇᴀꜱᴇ Jᴏɪɴ Aɴᴅ Sᴜᴘᴘᴏʀᴛ Uꜱ ❤️</b>"""
 
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
