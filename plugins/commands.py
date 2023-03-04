@@ -43,7 +43,7 @@ async def start(client, message):
                     InlineKeyboardButton('💠 Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ 💠', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('🇮🇳 Oᴡɴᴇʀ 🇮🇳', callback_data="owner_info"),
-                    InlineKeyboardButton('🔰 Bᴀᴄᴋᴜᴘ Gʀᴏᴜᴘ 🔰', url=GRP_LNK)
+                    InlineKeyboardButton('🔰 Oᴜʀ Gʀᴏᴜᴘꜱ 🔰', callback_data='group')
                 ],[
                     InlineKeyboardButton('❇️ Hᴇʟᴘ ❇️', callback_data='help'),
                     InlineKeyboardButton('✪ Aʙᴏᴜᴛ ✪', callback_data='about')
@@ -91,7 +91,7 @@ async def start(client, message):
                     InlineKeyboardButton('💠 Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ 💠', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('🇮🇳 Oᴡɴᴇʀ 🇮🇳', callback_data="owner_info"),
-                    InlineKeyboardButton('🔰 Bᴀᴄᴋᴜᴘ Gʀᴏᴜᴘ 🔰', url=GRP_LNK)
+                    InlineKeyboardButton('🔰 Oᴜʀ Gʀᴏᴜᴘꜱ 🔰', callback_data='group')
                 ],[
                     InlineKeyboardButton('❇️ Hᴇʟᴘ ❇️', callback_data='help'),
                     InlineKeyboardButton('✪ Aʙᴏᴜᴛ ✪', callback_data='about')
