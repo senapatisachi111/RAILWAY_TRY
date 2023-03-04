@@ -917,7 +917,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('💠 Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ 💠', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('🇮🇳 Oᴡɴᴇʀ 🇮🇳', callback_data="owner_info"),
-                    InlineKeyboardButton('🔰 Bᴀᴄᴋᴜᴘ Gʀᴏᴜᴘ 🔰', url=GRP_LNK)
+                    InlineKeyboardButton('🔰 Oᴜʀ Gʀᴏᴜᴘꜱ 🔰', callback_data='group')
                 ],[
                     InlineKeyboardButton('❇️ Hᴇʟᴘ ❇️', callback_data='help'),
                     InlineKeyboardButton('✪ Aʙᴏᴜᴛ ✪', callback_data='about')
@@ -1000,8 +1000,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-            InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', callback_data='source')
+            InlineKeyboardButton('Aʟʟ Lɪɴᴋᴢ', url="t.me/SNSXTG"),
+            InlineKeyboardButton('Dɪꜱᴄʟᴀɪᴍᴇʀ', callback_data='disclaimer')
         ],[
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
@@ -1017,7 +1017,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "source":
+    elif query.data == "disclaimer":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='about')
         ]]
@@ -1028,7 +1028,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         await query.message.edit_text(
-            text=script.SOURCE_TXT,
+            text=script.DISC_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -1204,6 +1204,26 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
             )
+
+    elif query.data == "group":
+        buttons = [[
+            InlineKeyboardButton('Mᴀɪɴ Gʀᴏᴜᴘ', url="t.me/+7j7EXi8FELQ2MjU9"),
+            InlineKeyboardButton('Bᴀᴄᴋᴜᴘ Gʀᴏᴜᴘ', url="t.me/+hS8TPhJcRvtjMWVl")
+        ],[
+            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('Mᴏᴠɪᴇ Uᴘᴅᴀᴛᴇꜱ', url="t.me/+EOtaPGpS-SRhNjRl")
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.GRP_TXT.format(temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
 
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
